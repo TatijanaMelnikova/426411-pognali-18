@@ -63,12 +63,85 @@
 
 
   <main>
+
+    <h1 class="catalog__title">Попутчики</h1>
+
+    <section class="">
+
+      <h2 class="">Подберите идеального попутчика</h2>
+
+      <form>
+
+        <h3>Хобби</h3>
+
+        <h3>Музыка</h3>
+        <label class="checkbox">
+          <ul class="music-links">
+            <li class="music-links__item">
+              <input id="heavy-metal" type="checkbox" name="black" checked>
+              <label for="heavy-metal">Тяжелый рок</label>
+            </li>
+            <li>
+              <input id="russian-rap" type="checkbox" name="white">
+              <label for="russian-rap">Русский рэп</label>
+            </li>
+            <li>
+              <input class="visually-hidden" id="colorBlue" type="checkbox" name="blue" checked>
+              <label for="colorBlue">Синий</label>
+            </li>
+            <li>
+              <input id="euro-dance" type="checkbox" name="red" checked>
+              <label for="euro-dance">Евроденс</label>
+            </li>
+          </ul>
+        </label>
+
+        <h3>Еда</h3>
+
+
+        <h3 class="user-vehicles__title">Транспорт</h3>
+        <ul class="vehicles-list">
+          <li class="vehicles-list__item  vehicles-list__item--airplane  vehicles-list__item--active"></li>
+          <li class="vehicles-list__item  vehicles-list__item--train"></li>
+          <li class="vehicles-list__item  vehicles-list__item--bicycles  vehicles-list__item--active"></li>
+          <li class="vehicles-list__item  vehicles-list__item--byFoot"></li>
+        </ul>
+
+
+
+        <fieldset class="">
+
+          <legend>Левел</legend>
+
+          <div class="range-filter">
+
+            <div class="level-controls">
+              <label class="min-level"><input name="min-level" type="text" value="0"></label>
+              <label class="max-level"><input name="max-level" type="text" value="100"></label>
+            </div>
+
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <button>Показать</button>
+
+      </form>
+
+    </section>
+
     <section class="catalog">
 
-      <div class="catalog__wrapper">
+      <h2 class="visually-hidden">Список попутчиков</h2>
 
-        <h2 class="catalog__title">Попутчики</h2>
-        <!--TODO form-->
+      <div class="catalog__wrapper">
 
         <ul class="catalog-list">
 
