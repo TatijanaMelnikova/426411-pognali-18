@@ -8,169 +8,187 @@
 
     <header class="page-header">
 
-      <a class="page-header__logo">Погнали?</a>
+      <a class="page-header__logo">
+        <img src="">
+      </a>
 
       <nav class="main-nav">
 
         <button class="main-nav__toggle" type="button">Открыть меню</button>
 
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site list">
+        <ul class="main-nav__site-list">
+          <li class="main-nav__site-item page-header__site-item--active">
+            <a href="#">О сервисе</a>
+          </li>
+          <li class="main-nav__site-item">
+            <a href="#">Направления</a>
+          </li>
+          <li class="main-nav__site-item">
+            <a href="#">Попутчики</a>
+          </li>
+        </ul>
 
-            <!--TODO-->
+        <ul class="main-nav__user-list">
+          <li class="main-nav__user-item">
+            <a class="main-nav__user-login" href="login.html">Авторизация</a>
+          </li>
+        </ul>
 
-          </ul>
+        <ul class="main-nav__contact-list">
+          <li class="main-nav__contact-item">
+            <a class="main-nav__contact-link" href="tel:88005558628">8(800)555-86-28</a>
+          </li>
+          <li class="main-nav__contact-item">
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
 
-          <ul class="main-nav__list contacts">
-            <li class="contacts-list">
-              <a class="contacts-phone">номер телефона</a>
-            </li>
-            <li class="contacts-list">
-              <a class="contacts-post">почта</a>
-            </li>
-          </ul>
-
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__login" href="login.html">авторизация</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__social-list">
+          <li class="main-nav__social-item">
+            <a class="main-nav__social-link  main-nav__social-link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="main-nav__social-item">
+            <a class="main-nav__social-link  main-nav__social-link--vk" href="#">Мы в Контакте</a>
+          </li>
+          <li class="main-nav__social-item">
+            <a class="main-nav__social-link  main-nav__social-link--instagram" href="#">Мы в Инстаграме</a>
+          </li>
+        </ul>
 
       </nav>
 
-    </header>
+</header>
 
 
     <main>
-      <section class="catalog-companions">
+      <section class="catalog">
 
-        <div class="catalog-companions__wrapper">
+        <div class="catalog__wrapper">
 
-          <h2 class="catalog-companions__title">Попутчики</h2>
+          <h2 class="catalog__title">Попутчики</h2>
           <!--TODO form-->
 
-          <ul class="catalog-companions-list">
+          <ul class="catalog-list">
 
-            <li class="catalog-companions-list__item">
+            <li class="catalog-list__item">
 
-              <img class="catalog-companions__img">
+              <img class="catalog__img">
 
-              <p class="catalog-companions__name">Таня Фирсова</p>
-              <p class="catalog-companions__preferences">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <p class="catalog__name">Таня Фирсова</p>
+              <p class="catalog__preferences">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
 
-              <ul class="catalog-countries-list">
-                <h3 class="catalog-countries__title">Хочет посетить</h3>
-                <li class="catalog-countries__item">Шри-Ланка</li>
-                <li class="catalog-countries__item">Тайланд</li>
-                <li class="catalog-countries__item">Сейшелы</li>
+              <ul class="countries-list">
+                <h3 class="countries__title">Хочет посетить</h3>
+                <li class="countries__item">Шри-Ланка</li>
+                <li class="countries__item">Тайланд</li>
+                <li class="countries__item">Сейшелы</li>
               </ul>
 
-              <ul class="companions__vehicles">
-                <h3 class="companions__title">Транспорт</h3>
-                <li class="vehicles-item vehicles-item--airplane vehicles-item--active"></li>
-                <li class="vehicles-item vehicles-item--train"></li>
-                <li class="vehicles-item vehicles-item--bicycles"></li>
-                <li class="vehicles-item vehicles-item--byFoot"></li>
+              <ul class="vehicles-list">
+                <h3 class="vehicles-list__title">Транспорт</h3>
+                <li class="vehicles-list__item  vehicles-list__item--airplane vehicles-list__item--active"></li>
+                <li class="vehicles-list__item  vehicles-list__item--train"></li>
+                <li class="vehicles-list__item  vehicles-list__item--bicycles"></li>
+                <li class="vehicles-list__item  vehicles-list__item--byFoot"></li>
               </ul>
 
-              <h3 class="catalog-companions-level__title">Левел</h3>
-              <p class="catalog-companions-level">
-                <span class="catalog-companions-level__number">99</span>
+              <h3 class="companions-level__title">Левел</h3>
+              <p class="companions-level">
+                <span class="companions-level__number">99</span>
               </p>
 
-              <button class="companions__add" type="button"></button>
+              <button class="button companions__add" type="button"></button>
 
             </li>
 
-            <li class="catalog-companions-list__item">
+            <li class="companions-list__item">
 
-              <img class="catalog-companions__img">
+              <img class="companions__img catalog">
 
-              <p class="catalog-companions__name">Петя Демин</p>
-              <p class="catalog-companions__preferences">#бургер #бар #футбол #концерт #крафт</p>
+              <p class="companions__name">Петя Демин</p>
+              <p class="companions__preferences">#бургер #бар #футбол #концерт #крафт</p>
 
-              <ul class="catalog-countries-list">
-                <h3 class="catalog-countries__title">Хочет посетить</h3>
-                <li class="catalog-countries__item">Бельгия</li>
-                <li class="catalog-countries__item">Чехия</li>
+              <ul class="countries-list">
+                <h3 class="countries__title">Хочет посетить</h3>
+                <li class="countries__item">Бельгия</li>
+                <li class="countries__item">Чехия</li>
               </ul>
 
-              <ul class="companions__vehicles">
-                <h3 class="companions__title">Транспорт</h3>
-                <li class="vehicles-item vehicles-item--airplane vehicles-item--active"></li>
-                <li class="vehicles-item vehicles-item--train vehicles-item--active"></li>
-                <li class="vehicles-item vehicles-item--bicycles"></li>
-                <li class="vehicles-item vehicles-item--byFoot vehicles-item--active"></li>
+              <ul class="vehicles-list">
+                <h3 class="vehicles-list__title">Транспорт</h3>
+                <li class="vehicles-list__item  vehicles-list__item--airplane  vehicles-list__item--active"></li>
+                <li class="vehicles-list__item  vehicles-list__item--train  vehicles-list__item--active"></li>
+                <li class="vehicles-list__item  vehicles-list__item--bicycles"></li>
+                <li class="vehicles-list__item  vehicles-list__item--byFoot  vehicles-list__item--active"></li>
               </ul>
 
-              <h3 class="catalog-companions-level__title">Левел</h3>
-              <p class="catalog-companions-level">
-                <span class="catalog-companions-level__number">80</span>
+              <h3 class="companions-level__title">Левел</h3>
+              <p class="companions-level">
+                <span class="companions-level__number">80</span>
               </p>
 
-              <button class="companions__add" type="button"></button>
+              <button class="button companions__add" type="button"></button>
 
             </li>
 
-            <li class="catalog-companions-list__item">
+            <li class="companions-list__item">
 
-              <img class="catalog-companions__img">
+              <img class="companions__img">
 
-              <p class="catalog-companions__name">Марк Смолов</p>
+              <p class="companions__name">Марк Смолов</p>
               <p class="catalog-companions__preferences">#рэп #тату #хайпбист #кроссовки #суприм</p>
 
-              <ul class="catalog-countries-list">
-                <h3 class="catalog-countries__title">Хочет посетить</h3>
-                <li class="catalog-countries__item">США</li>
-                <li class="catalog-countries__item">Австралия</li>
-                <li class="catalog-countries__item">Доминикана</li>
+              <ul class="countries-list">
+                <h3 class="countries__title">Хочет посетить</h3>
+                <li class="countries__item">США</li>
+                <li class="countries__item">Австралия</li>
+                <li class="countries__item">Доминикана</li>
               </ul>
 
-              <ul class="companions__vehicles">
-                <h3 class="companions__title">Транспорт</h3>
-                <li class="vehicles-item vehicles-item--airplane vehicles-item--active"></li>
-                <li class="vehicles-item vehicles-item--train"></li>
-                <li class="vehicles-item vehicles-item--bicycles vehicles-item--active"></li>
-                <li class="vehicles-item vehicles-item--byFoot"></li>
+              <ul class="vehicles-list">
+                <h3 class="vehicles-list__title">Транспорт</h3>
+                <li class="vehicles-list__item  vehicles-list__item--airplane  vehicles-list__item--active"></li>
+                <li class="vehicles-list__item  vehicles-list__item--train"></li>
+                <li class="vehicles-list__item  vehicles-list__item--bicycles  vehicles-list__item--active"></li>
+                <li class="vehicles-list__item  vehicles-list__item--byFoot"></li>
               </ul>
 
-              <h3 class="catalog-companions-level__title">Левел</h3>
-              <p class="catalog-companions-level">
-                <span class="catalog-companions-level__number">25</span>
+              <h3 class="companions-level__title">Левел</h3>
+              <p class="companions-level">
+                <span class="companions-level__number">25</span>
               </p>
 
-              <button class="companions__add" type="button"></button>
+              <button class="button companions__add" type="button"></button>
 
             </li>
 
-            <li class="catalog-companions-list__item">
+            <li class="companions-list__item">
 
-              <img class="catalog-companions__img">
+              <img class="companions__img">
 
-              <p class="catalog-companions__name">Лариса Роговая</p>
-              <p class="catalog-companions__preferences">#образование #карьера #учеба #линкедин</p>
+              <p class="companions__name">Лариса Роговая</p>
+              <p class="companions__preferences">#образование #карьера #учеба #линкедин</p>
 
-              <ul class="catalog-countries-list">
-                <h3 class="catalog-countries__title">Хочет посетить</h3>
-                <li class="catalog-countries__item">Великобритания</li>
-                <li class="catalog-countries__item">Германия</li>
+              <ul class="countries-list">
+                <h3 class="countries__title">Хочет посетить</h3>
+                <li class="countries__item">Великобритания</li>
+                <li class="countries__item">Германия</li>
               </ul>
 
-              <ul class="companions__vehicles">
-                <h3 class="companions__title">Транспорт</h3>
-                <li class="vehicles-item vehicles-item--airplane vehicles-item--active"></li>
-                <li class="vehicles-item vehicles-item--train"></li>
-                <li class="vehicles-item vehicles-item--bicycles vehicles-item--active"></li>
-                <li class="vehicles-item vehicles-item--byFoot"></li>
+              <ul class="vehicles-list">
+                <h3 class="vehicles__title">Транспорт</h3>
+                <li class="vehicles-list__item  vehicles-list__item--airplane  vehicles-list__item--active"></li>
+                <li class="vehicles-list__item  vehicles-list__item--train"></li>
+                <li class="vehicles-list__item  vehicles-list__item--bicycles  vehicles-list__item--active"></li>
+                <li class="vehicles-list__item  vehicles-list__item--byFoot"></li>
               </ul>
 
-              <h3 class="catalog-companions-level__title">Левел</h3>
-              <p class="catalog-companions-level">
-                <span class="catalog-companions-level__number">50</span>
+              <h3 class="companions-level__title">Левел</h3>
+              <p class="companions-level">
+                <span class="companions-level__number">50</span>
               </p>
 
-              <button class="companions__add" type="button"></button>
+              <button class="button companions__add" type="button"></button>
 
             </li>
 
@@ -194,29 +212,31 @@
     </main>
 
 
-    <footer>
+    <footer class="page-footer">
 
       <div class="page-footer__wrapper">
 
-        <a class="page-footer__logo">Погнали?</a>
+        <a class="page-footer__logo">
+          <img src="">
+        </a>
 
         <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link  page-footer__social-link--facebook" href="#">Мы в Фейсбуке</a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#">Мы в Контакте</a>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link  page-footer__social-link--vk" href="#">Мы в Контакте</a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link  page-footer__social-link--instagram" href="#">Мы в Инстаграме</a>
             </li>
           </ul>
         </div>
 
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="page-footer__copyright">
+          <b class="page-footer__copyright-text">Разработано</b>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
 
       </div>
