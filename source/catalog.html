@@ -66,76 +66,92 @@
 
     <h1 class="catalog__title">Попутчики</h1>
 
-    <section class="">
+    <form class="companions-form" method="get" action="https:\\echo.htmlacademy.ru">
 
-      <h2 class="">Подберите идеального попутчика</h2>
+      <strong class="companions-form__title">Подберите идеального попутчика</strong>
 
-      <form>
+      <fieldset class="companions-form__fieldset">
+        <legend class="companions-form__legend">Хобби</legend>
+      </fieldset>
 
-        <h3>Хобби</h3>
+      <fieldset class="companions-form__fieldset companions-form__fieldset--music">
+        <legend class="companions-form__legend">Музыка</legend>
+        <p>
+          <label class="companions-form__label">
+            <input type="checkbox" name="music" value="heavy-rock">
+            <span>Тяжелый рок</span>
+          </label>
+        </p>
+        <p>
+          <label class="companions-form__label">
+            <input type="checkbox" name="music" value="russian-rap">
+            <span>Русский рэп</span>
+          </label>
+        </p>
+        <p>
+          <label class="companions-form__label">
+            <input type="checkbox" name="music" value="eurodance">
+            <span>Евроденс</span>
+          </label>
+        </p>
+      </fieldset>
 
-        <h3>Музыка</h3>
-        <label class="checkbox">
-          <ul class="music-links">
-            <li class="music-links__item">
-              <input id="heavy-metal" type="checkbox" name="black" checked>
-              <label for="heavy-metal">Тяжелый рок</label>
-            </li>
-            <li>
-              <input id="russian-rap" type="checkbox" name="white">
-              <label for="russian-rap">Русский рэп</label>
-            </li>
-            <li>
-              <input class="visually-hidden" id="colorBlue" type="checkbox" name="blue" checked>
-              <label for="colorBlue">Синий</label>
-            </li>
-            <li>
-              <input id="euro-dance" type="checkbox" name="red" checked>
-              <label for="euro-dance">Евроденс</label>
-            </li>
-          </ul>
-        </label>
+      <fieldset class="companions-form__fieldset">
+        <legend class="companions-form__legend">Еда</legend>
+      </fieldset>
 
-        <h3>Еда</h3>
+      <fieldset class="companions-form__fieldset  companions-form__fieldset--transport">
+        <legend class="companions-form__legend">Транспорт</legend>
+        <p>
+          <label class="companions-form__label">
+            <input type="checkbox" name="transport" value="plane">
+            <span>Самолет</span>
+          </label>
+        </p>
+        <p>
+          <label class="companions-form__label">
+            <input type="checkbox" name="transport" value="bus">
+            <span>Автобус</span>
+          </label>
+        </p>
+        <p>
+          <label class="companions-form__label">
+            <input type="checkbox" name="transport" value="bike">
+            <span>Велосипед</span>
+          </label>
+        </p>
+        <p>
+          <label class="companions-form__label">
+            <input type="checkbox" name="transport" value="onfoot">
+            <span>Пешком</span>
+          </label>
+        </p>
+      </fieldset>
+
+      <fieldset class="companions-form__fieldset  companions-form__fieldset--level">
+        <legend class="companions-form__legend">Левел</legend>
+        <p>
+          <label>
+            <span>C</span>
+            <input type="number" value="30">
+          </label>
+        </p>
+        <p>
+          <label class="companions-form__label">
+            <span>По</span>
+            <input type="number" value="100">
+          </label>
+        </p>
+        <p>
+          <input type="range" min="0" max="100" name="level">
+        </p>
+      </fieldset>
+
+      <button class="companions-form__submit" type="submit">Показать</button>
+
+    </form>
 
 
-        <h3 class="user-vehicles__title">Транспорт</h3>
-        <ul class="vehicles-list">
-          <li class="vehicles-list__item  vehicles-list__item--airplane  vehicles-list__item--active"></li>
-          <li class="vehicles-list__item  vehicles-list__item--train"></li>
-          <li class="vehicles-list__item  vehicles-list__item--bicycles  vehicles-list__item--active"></li>
-          <li class="vehicles-list__item  vehicles-list__item--byFoot"></li>
-        </ul>
-
-
-
-        <fieldset class="">
-
-          <legend>Левел</legend>
-
-          <div class="range-filter">
-
-            <div class="level-controls">
-              <label class="min-level"><input name="min-level" type="text" value="0"></label>
-              <label class="max-level"><input name="max-level" type="text" value="100"></label>
-            </div>
-
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
-              </div>
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
-            </div>
-
-          </div>
-        </fieldset>
-
-        <button>Показать</button>
-
-      </form>
-
-    </section>
 
     <section class="catalog">
 
