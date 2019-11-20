@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Tatiana Melnikova Zavarikina](https://up.htmlacademy.ru/adaptive/18/user/426411).
-* Наставник: [Александр Григорьев :)] (https://htmlacademy.ru/profile/fuckhtml).
+* Наставник: [Александр Григорьев :)](https://htmlacademy.ru/profile/fuckhtml).
 
 ---
 
