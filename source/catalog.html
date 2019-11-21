@@ -66,92 +66,350 @@
 
     <h1 class="catalog__title">Попутчики</h1>
 
-    <form class="companions-form" method="get" action="https:\\echo.htmlacademy.ru">
+    <div class="companions">
 
-      <strong class="companions-form__title">Подберите идеального попутчика</strong>
+      <form class="companions-form" method="get" action="https:\\echo.htmlacademy.ru">
 
-      <fieldset class="companions-form__fieldset">
-        <legend class="companions-form__legend">Хобби</legend>
-      </fieldset>
+        <strong class="companions-form__title">Подберите идеального попутчика</strong>
 
-      <fieldset class="companions-form__fieldset companions-form__fieldset--music">
-        <legend class="companions-form__legend">Музыка</legend>
-        <p>
-          <label class="companions-form__label">
-            <input type="checkbox" name="music" value="heavy-rock">
-            <span>Тяжелый рок</span>
-          </label>
-        </p>
-        <p>
-          <label class="companions-form__label">
-            <input type="checkbox" name="music" value="russian-rap">
-            <span>Русский рэп</span>
-          </label>
-        </p>
-        <p>
-          <label class="companions-form__label">
-            <input type="checkbox" name="music" value="eurodance">
-            <span>Евроденс</span>
-          </label>
-        </p>
-      </fieldset>
+        <fieldset class="companions-form__fieldset">
+          <legend class="companions-form__legend">Хобби</legend>
+        </fieldset>
 
-      <fieldset class="companions-form__fieldset">
-        <legend class="companions-form__legend">Еда</legend>
-      </fieldset>
+        <fieldset class="companions-form__fieldset companions-form__fieldset--music">
+          <legend class="companions-form__legend">Музыка</legend>
+          <p>
+            <label class="companions-form__label">
+              <input type="checkbox" name="music" value="heavy-rock">
+              <span>Тяжелый рок</span>
+            </label>
+          </p>
+          <p>
+            <label class="companions-form__label">
+              <input type="checkbox" name="music" value="russian-rap">
+              <span>Русский рэп</span>
+            </label>
+          </p>
+          <p>
+            <label class="companions-form__label">
+              <input type="checkbox" name="music" value="eurodance">
+              <span>Евроденс</span>
+            </label>
+          </p>
+        </fieldset>
 
-      <fieldset class="companions-form__fieldset  companions-form__fieldset--transport">
-        <legend class="companions-form__legend">Транспорт</legend>
-        <p>
-          <label class="companions-form__label">
-            <input type="checkbox" name="transport" value="plane">
-            <span>Самолет</span>
-          </label>
-        </p>
-        <p>
-          <label class="companions-form__label">
-            <input type="checkbox" name="transport" value="bus">
-            <span>Автобус</span>
-          </label>
-        </p>
-        <p>
-          <label class="companions-form__label">
-            <input type="checkbox" name="transport" value="bike">
-            <span>Велосипед</span>
-          </label>
-        </p>
-        <p>
-          <label class="companions-form__label">
-            <input type="checkbox" name="transport" value="onfoot">
-            <span>Пешком</span>
-          </label>
-        </p>
-      </fieldset>
+        <fieldset class="companions-form__fieldset">
+          <legend class="companions-form__legend">Еда</legend>
+        </fieldset>
 
-      <fieldset class="companions-form__fieldset  companions-form__fieldset--level">
-        <legend class="companions-form__legend">Левел</legend>
-        <p>
-          <label>
-            <span>C</span>
-            <input type="number" value="30">
-          </label>
-        </p>
-        <p>
-          <label class="companions-form__label">
-            <span>По</span>
-            <input type="number" value="100">
-          </label>
-        </p>
-        <p>
-          <input type="range" min="0" max="100" name="level">
-        </p>
-      </fieldset>
+        <fieldset class="companions-form__fieldset  companions-form__fieldset--transport">
+          <legend class="companions-form__legend">Транспорт</legend>
+          <p>
+            <label class="companions-form__label">
+              <input type="checkbox" name="transport" value="plane">
+              <span>Самолет</span>
+            </label>
+          </p>
+          <p>
+            <label class="companions-form__label">
+              <input type="checkbox" name="transport" value="bus">
+              <span>Автобус</span>
+            </label>
+          </p>
+          <p>
+            <label class="companions-form__label">
+              <input type="checkbox" name="transport" value="bike">
+              <span>Велосипед</span>
+            </label>
+          </p>
+          <p>
+            <label class="companions-form__label">
+              <input type="checkbox" name="transport" value="onfoot">
+              <span>Пешком</span>
+            </label>
+          </p>
+        </fieldset>
 
-      <button class="companions-form__submit" type="submit">Показать</button>
+        <fieldset class="companions-form__fieldset  companions-form__fieldset--level">
+          <legend class="companions-form__legend">Левел</legend>
+          <p>
+            <label class="companions-form__label">
+              <span>C</span>
+              <input type="number" value="30">
+            </label>
+          </p>
+          <p>
+            <label class="companions-form__label">
+              <span>По</span>
+              <input type="number" value="100">
+            </label>
+          </p>
+          <p>
+            <input type="range" min="0" max="100" name="level">
+          </p>
+        </fieldset>
+
+        <button class="companions-form__submit" type="submit">Показать</button>
+
+      </form>
+
+    </div>
+
+    <div class="destination">
+
+      <form class="destination-form  destination-form--closed" method="get" action="https:\\echo.htmlacademy.ru">
+
+       <h2>Фильтрация по странам</h2>
+
+       <fieldset class="destination-form__fieldset  destination-form__fieldset--continents">
+         <legend>Континент</legend>
+         <p>
+           <label class="destination-form__label">
+             <span>Европа</span>
+             <input type="radio" name="destination-continent" checked>
+           </label>
+         </p>
+         <p>
+           <label class="destination-form__label">
+             <span>Азия</span>
+             <input type="radio" name="destination-continent">
+           </label>
+         </p>
+         <p>
+           <label class="destination-form__label">
+             <span>Америка</span>
+             <input type="radio" name="destination-continent">
+           </label>
+         </p>
+         <p>
+           <label class="destination-form__label">
+             <span>Острова</span>
+             <input type="radio" name="destination-continent">
+           </label>
+         </p>
+       </fieldset>
+
+       <fieldset class="destination-form__alphabet">
+         <legend>Алфавит</legend>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet" checked>
+             <span>А</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Б</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>В</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Г</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Д</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Е</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>З</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>И</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>К</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Л</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>М</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Н</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>О</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>П</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Р</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>С</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Т</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>У</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Ф</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Х</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Ч</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Ш</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Э</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Ю</span>
+           </label>
+         </p>
+         <p>
+           <label>
+             <input type="radio" name="destination-alphabet">
+             <span>Я</span>
+           </label>
+         </p>
+
+       </fieldset>
+
+       <fieldset class="destination-form__fieldset  destination-form__fieldset--countries">
+         <legend>Страны</legend>
+         <p>
+           <label class="destination-form__label">
+             <span>Афганистан</span>
+             <input type="radio" name="destination-country">
+           </label>
+         </p>
+         <p>
+           <label class="destination-form__label">
+             <span>Албания</span>
+             <input type="radio" name="destination-country">
+           </label>
+         </p>
+         <p>
+           <label class="destination-form__label">
+             <span>Алжир</span>
+             <input type="radio" name="destination-country">
+           </label>
+         </p>
+         <p>
+           <label class="destination-form__label">
+             <span>Андорра</span>
+             <input type="radio" name="destination-country">
+           </label>
+         </p>
+         <p>
+           <label>
+             <span>Аргентина</span>
+             <input type="radio" name="destination-country">
+           </label>
+         </p>
+         <p>
+           <label class="destination-form__label">
+             <span>Армения</span>
+             <input type="radio" name="destination-country">
+           </label>
+         </p>
+         <p>
+           <label class="destination-form__label">
+             <span>Австралия</span>
+             <input type="radio" name="destination-country">
+           </label>
+         </p>
+         <p>
+           <label class="destination-form__label">
+             <span>Австрия</span>
+             <input type="radio" name="destination-country">
+           </label>
+         </p>
+         <p>
+           <label class="destination-form__label">
+             <span>Азербайджан</span>
+             <input type="radio" name="destination-country">
+           </label>
+         </p>
+
+       </fieldset>
+
+       <button type="submit">Показать</button>
+
+       <button type="button">Cвернуть</button>
 
     </form>
 
-
+    </div>
 
     <section class="catalog">
 
