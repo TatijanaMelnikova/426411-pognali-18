@@ -1,777 +1,793 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Погнали</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Попутчики | Онлайн-сервис Погнали</title>
+  </head>
 
-<body>
+  <body>
 
-  <header class="page-header">
+    <header class="page-header">
 
-    <a class="page-header__logo">
-      <img src="">
-    </a>
-
-    <nav class="main-nav">
-
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-
-      <ul class="main-nav__site-list">
-        <li class="main-nav__site-item page-header__site-item--active">
-          <a href="index.html">О сервисе</a>
-        </li>
-        <li class="main-nav__site-item">
-          <a href="form.html">Направления</a>
-        </li>
-        <li class="main-nav__site-item">
-          <a>Попутчики</a>
-        </li>
-      </ul>
-
-      <ul class="main-nav__user-list">
-        <li class="main-nav__user-item">
-          <a class="main-nav__user-login" href="login.html">Авторизация</a>
-        </li>
-      </ul>
-
-      <ul class="main-nav__contact-list">
-        <li class="main-nav__contact-item">
-          <a class="main-nav__contact-link" href="tel:88005558628">8(800)555-86-28</a>
-        </li>
-        <li class="main-nav__contact-item">
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-      </ul>
-
-      <ul class="main-nav__social-list">
-        <li class="main-nav__social-item">
-          <a class="main-nav__social-link  main-nav__social-link--facebook" href="#">Мы в Фейсбуке</a>
-        </li>
-        <li class="main-nav__social-item">
-          <a class="main-nav__social-link  main-nav__social-link--vk" href="#">Мы в Контакте</a>
-        </li>
-        <li class="main-nav__social-item">
-          <a class="main-nav__social-link  main-nav__social-link--instagram" href="#">Мы в Инстаграме</a>
-        </li>
-      </ul>
-
-    </nav>
-
-</header>
-
-
-  <main>
-
-    <h1 class="catalog__title">Попутчики</h1>
-
-    <div class="companions">
-
-      <form class="companions-form" method="get" action="https:\\echo.htmlacademy.ru">
-
-        <strong class="companions-form__title">Подберите идеального попутчика</strong>
-
-        <fieldset class="companions-form__fieldset">
-          <legend class="companions-form__legend">Хобби</legend>
-        </fieldset>
-
-        <fieldset class="companions-form__fieldset companions-form__fieldset--music">
-          <legend class="companions-form__legend">Музыка</legend>
-          <p>
-            <label class="companions-form__label">
-              <input type="checkbox" name="music" value="heavy-rock">
-              <span>Тяжелый рок</span>
-            </label>
-          </p>
-          <p>
-            <label class="companions-form__label">
-              <input type="checkbox" name="music" value="russian-rap">
-              <span>Русский рэп</span>
-            </label>
-          </p>
-          <p>
-            <label class="companions-form__label">
-              <input type="checkbox" name="music" value="eurodance">
-              <span>Евроденс</span>
-            </label>
-          </p>
-        </fieldset>
-
-        <fieldset class="companions-form__fieldset">
-          <legend class="companions-form__legend">Еда</legend>
-        </fieldset>
-
-        <fieldset class="companions-form__fieldset  companions-form__fieldset--transport">
-          <legend class="companions-form__legend">Транспорт</legend>
-          <p>
-            <label class="companions-form__label">
-              <input type="checkbox" name="transport" value="plane">
-              <span>Самолет</span>
-            </label>
-          </p>
-          <p>
-            <label class="companions-form__label">
-              <input type="checkbox" name="transport" value="bus">
-              <span>Автобус</span>
-            </label>
-          </p>
-          <p>
-            <label class="companions-form__label">
-              <input type="checkbox" name="transport" value="bike">
-              <span>Велосипед</span>
-            </label>
-          </p>
-          <p>
-            <label class="companions-form__label">
-              <input type="checkbox" name="transport" value="onfoot">
-              <span>Пешком</span>
-            </label>
-          </p>
-        </fieldset>
-
-        <fieldset class="companions-form__fieldset  companions-form__fieldset--level">
-          <legend class="companions-form__legend">Левел</legend>
-          <p>
-            <label class="companions-form__label">
-              <span>C</span>
-              <input type="number" value="30">
-            </label>
-          </p>
-          <p>
-            <label class="companions-form__label">
-              <span>По</span>
-              <input type="number" value="100">
-            </label>
-          </p>
-          <p>
-            <input type="range" min="0" max="100" name="level">
-          </p>
-        </fieldset>
-
-        <button class="companions-form__submit" type="submit">Показать</button>
-
-      </form>
-
-    </div>
-
-    <div class="destination">
-
-      <form class="destination-form  destination-form--closed" method="get" action="https:\\echo.htmlacademy.ru">
-
-       <h2>Фильтрация по странам</h2>
-
-       <fieldset class="destination-form__fieldset  destination-form__fieldset--continents">
-         <legend>Континент</legend>
-         <p>
-           <label class="destination-form__label">
-             <span>Европа</span>
-             <input type="radio" name="destination-continent" checked>
-           </label>
-         </p>
-         <p>
-           <label class="destination-form__label">
-             <span>Азия</span>
-             <input type="radio" name="destination-continent">
-           </label>
-         </p>
-         <p>
-           <label class="destination-form__label">
-             <span>Америка</span>
-             <input type="radio" name="destination-continent">
-           </label>
-         </p>
-         <p>
-           <label class="destination-form__label">
-             <span>Острова</span>
-             <input type="radio" name="destination-continent">
-           </label>
-         </p>
-       </fieldset>
-
-       <fieldset class="destination-form__alphabet">
-         <legend>Алфавит</legend>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet" checked>
-             <span>А</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Б</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>В</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Г</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Д</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Е</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>З</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>И</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>К</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Л</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>М</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Н</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>О</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>П</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Р</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>С</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Т</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>У</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Ф</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Х</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Ч</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Ш</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Э</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Ю</span>
-           </label>
-         </p>
-         <p>
-           <label>
-             <input type="radio" name="destination-alphabet">
-             <span>Я</span>
-           </label>
-         </p>
-
-       </fieldset>
-
-       <fieldset class="destination-form__fieldset  destination-form__fieldset--countries">
-         <legend>Страны</legend>
-         <p>
-           <label class="destination-form__label">
-             <span>Афганистан</span>
-             <input type="radio" name="destination-country">
-           </label>
-         </p>
-         <p>
-           <label class="destination-form__label">
-             <span>Албания</span>
-             <input type="radio" name="destination-country">
-           </label>
-         </p>
-         <p>
-           <label class="destination-form__label">
-             <span>Алжир</span>
-             <input type="radio" name="destination-country">
-           </label>
-         </p>
-         <p>
-           <label class="destination-form__label">
-             <span>Андорра</span>
-             <input type="radio" name="destination-country">
-           </label>
-         </p>
-         <p>
-           <label>
-             <span>Аргентина</span>
-             <input type="radio" name="destination-country">
-           </label>
-         </p>
-         <p>
-           <label class="destination-form__label">
-             <span>Армения</span>
-             <input type="radio" name="destination-country">
-           </label>
-         </p>
-         <p>
-           <label class="destination-form__label">
-             <span>Австралия</span>
-             <input type="radio" name="destination-country">
-           </label>
-         </p>
-         <p>
-           <label class="destination-form__label">
-             <span>Австрия</span>
-             <input type="radio" name="destination-country">
-           </label>
-         </p>
-         <p>
-           <label class="destination-form__label">
-             <span>Азербайджан</span>
-             <input type="radio" name="destination-country">
-           </label>
-         </p>
-
-       </fieldset>
-
-       <button type="submit">Показать</button>
-
-       <button type="button">Cвернуть</button>
-
-    </form>
-
-    </div>
-
-    <section class="catalog">
-
-      <h2 class="visually-hidden">Список попутчиков</h2>
-
-      <div class="catalog__wrapper">
-
-        <ul class="catalog-list">
-
-          <li class="catalog-list__item">
-
-            <article class="companion-card">
-
-              <h3 class="companion-card__name">Таня Фирсова</h3>
-
-              <p class="companion-card__status">Статус: не сети</p>
-
-              <div class="companion-card__photo">
-                <img class="companion-card__img" alt="Фото Тани Фирсовой">
-              </div>
-
-              <p class="companion-card__level">
-                <span class="companion-card__level-value">99</span>
-                <span class="companion-card__level-text">level</span>
-              </p>
-
-              <section class="companion-card__preferences">
-                <h4 class="companion-card__preferences-title">Интересы</h4>
-                <ul class="companion-card__preferences-list">
-                  <li class="companion-card__preferences-item">#ЗОЖ</li>
-                  <li class="companion-card__preferences-item">#ПП</li>
-                  <li class="companion-card__preferences-item">#Фитнес</li>
-                  <li class="companion-card__preferences-item">#Пляж</li>
-                  <li class="companion-card__preferences-item">#Авокадо</li>
-                  <li class="companion-card__preferences-item">#Смузи</li>
-                </ul>
-              </section>
-
-              <section class="companion-card__country">
-                <h4 class="companion-card__country-title">Страны</h4>
-                <ul class="companion-card__country-list">
-                  <li class="countries-list__country-item
-                   countries-list__country-item--thailand">
-                    Тайланд
-                  </li>
-                  <li class="countries-list__country-item
-                   countries-list__country-item--seychelles">
-                    Сейшельские острова
-                  </li>
-                </ul>
-              </section>
-
-
-              <section class="companion-card__vehicles">
-                <h4 class="companion-card__vehicles-title">Транспортные средства</h4>
-                <ul class="companion-card__vehicles-list">
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--active
-                   companion-card__vehicles-item--airplane">
-                    Самолет: используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--train">
-                    Поезд: не используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--bicycles">
-                    Велосипед: не используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--byfoot">
-                    Пешком: не используется
-                  </li>
-                </ul>
-              </section>
-
-            </article>
-
-            <button class="button companions__add" type="button">Позвать</button>
-
-          </li>
-
-          <li class="companions-list__item">
-
-            <article class="companion-card">
-
-              <h3 class="companion-card__name">Петя Демин</h3>
-
-              <p class="companion-card__status  companion-card__status--online">Статус: в сети</p>
-
-              <div class="companion-card__photo">
-                <img class="companion-card__img" alt="Фото Пети Демина">
-              </div>
-
-              <p class="companion-card__level">
-                <span class="companion-card__level-value">80</span>
-                <span class="companion-card__level-text">level</span>
-              </p>
-
-              <section class="companion-card__preferences">
-                <h4 class="companion-card__preferences-title">Интересы</h4>
-                <ul class="companion-card__preferences-list">
-                  <li class="companion-card__preferences-item">#бургер</li>
-                  <li class="companion-card__preferences-item">#бар</li>
-                  <li class="companion-card__preferences-item">#футбол</li>
-                  <li class="companion-card__preferences-item">#концерт</li>
-                  <li class="companion-card__preferences-item">#крафт</li>
-                </ul>
-              </section>
-
-              <section class="companion-card__country">
-                <h4 class="companion-card__country-title">Страны</h4>
-                <ul class="companion-card__country-list">
-                  <li class="countries-list__country-item
-                   countries-list__country-item--belgium">
-                    Бельгия
-                  </li>
-                  <li class="countries-list__country-item
-                   countries-list__country-item--czech">
-                    Чехия
-                  </li>
-                </ul>
-              </section>
-
-
-              <section class="companion-card__vehicles">
-                <h4 class="companion-card__vehicles-title">Транспортные средства</h4>
-                <ul class="companion-card__vehicles-list">
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--active
-                   companion-card__vehicles-item--airplane">
-                    Самолет: используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--active
-                   companion-card__vehicles-item--train">
-                    Поезд: используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--bicycles">
-                    Велосипед: не используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--active
-                   companion-card__vehicles-item--byfoot">
-                    Пешком: используется
-                  </li>
-                </ul>
-              </section>
-
-            </article>
-
-            <button class="button companions__add" type="button">Позвать</button>
-
-          </li>
-
-          <li class="companions-list__item">
-
-            <article class="companion-card">
-
-              <h3 class="companion-card__name">Марк Смолов</h3>
-
-              <p class="companion-card__status">Статус: не сети</p>
-
-              <div class="companion-card__photo">
-                <img class="companion-card__img" alt="Фото Марка Смолова">
-              </div>
-
-              <p class="companion-card__level">
-                <span class="companion-card__level-value">25</span>
-                <span class="companion-card__level-text">level</span>
-              </p>
-
-              <section class="companion-card__preferences">
-                <h4 class="companion-card__preferences-title">Интересы</h4>
-                <ul class="companion-card__preferences-list">
-                  <li class="companion-card__preferences-item">#рэп</li>
-                  <li class="companion-card__preferences-item">#тату</li>
-                  <li class="companion-card__preferences-item">#хайлбист</li>
-                  <li class="companion-card__preferences-item">#кроссовки</li>
-                  <li class="companion-card__preferences-item">#суприм</li>
-                </ul>
-              </section>
-
-              <section class="companion-card__country">
-                <h4 class="companion-card__country-title">Страны</h4>
-                <ul class="companion-card__country-list">
-                  <li class="countries-list__country-item
-                   countries-list__country-item--usa">
-                    США
-                  </li>
-                  <li class="countries-list__country-item
-                   countries-list__country-item--australia">
-                    Австралия
-                  </li>
-                  <li class="countries-list__country-item
-                   countries-list__country-item--dominican">
-                    Доминикана
-                  </li>
-                </ul>
-              </section>
-
-
-              <section class="companion-card__vehicles">
-                <h4 class="companion-card__vehicles-title">Транспортные средства</h4>
-                <ul class="companion-card__vehicles-list">
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--active
-                   companion-card__vehicles-item--airplane">
-                    Самолет: используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--train">
-                    Поезд: не используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--active
-                   companion-card__vehicles-item--bicycles">
-                    Велосипед: используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--byfoot">
-                    Пешком: не используется
-                  </li>
-                </ul>
-              </section>
-
-            </article>
-
-            <button class="button companions__add" type="button">Позвать</button>
-
-          </li>
-
-          <li class="companions-list__item">
-
-            <article class="companion-card">
-
-              <h3 class="companion-card__name">Лариса Роговая</h3>
-
-              <p class="companion-card__status  companion-card__status--online">Статус: сети</p>
-
-              <div class="companion-card__photo">
-                <img class="companion-card__img" alt="Фото Пети Демина">
-              </div>
-
-              <p class="companion-card__level">
-                <span class="companion-card__level-value">50</span>
-                <span class="companion-card__level-text">level</span>
-              </p>
-
-              <section class="companion-card__preferences">
-                <h4 class="companion-card__preferences-title">Интересы</h4>
-                <ul class="companion-card__preferences-list">
-                  <li class="companion-card__preferences-item">#образование</li>
-                  <li class="companion-card__preferences-item">#карьера</li>
-                  <li class="companion-card__preferences-item">#учеба</li>
-                  <li class="companion-card__preferences-item">#линкедин</li>
-                </ul>
-              </section>
-
-              <section class="companion-card__country">
-                <h4 class="companion-card__country-title">Страны</h4>
-                <ul class="companion-card__country-list">
-                  <li class="countries-list__country-item
-                   countries-list__country-item--britain">
-                    Великобритание
-                  </li>
-                  <li class="countries-list__country-item
-                   countries-list__country-item--germany">
-                    Германия
-                  </li>
-                </ul>
-              </section>
-
-
-              <section class="companion-card__vehicles">
-                <h4 class="companion-card__vehicles-title">Транспортные средства</h4>
-                <ul class="companion-card__vehicles-list">
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--active
-                   companion-card__vehicles-item--airplane">
-                    Самолет: используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--active
-                   companion-card__vehicles-item--train">
-                    Поезд: используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--bicycles">
-                    Велосипед: не используется
-                  </li>
-                  <li class="companion-card__vehicles-item
-                   companion-card__vehicles-item--byfoot">
-                    Пешком: не используется
-                  </li>
-                </ul>
-              </section>
-
-            </article>
-
-            <button class="button companions__add" type="button">Позвать</button>
-
-          </li>
-
-        </ul>
-
-        <button class="button companions__button" type="button">Показать еще</button>
-
-        <nav class="pagination">
-
-          <ul class="pagination-list">
-            <li class="pagination-item page-next"><a href="#">назад</a></li>
-            <li class="pagination-item page-back"><a href="#">вперед</a></li>
-          </ul>
-
-        </nav>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <footer class="page-footer">
-
-    <div class="page-footer__wrapper">
-
-      <a class="page-footer__logo">
+      <a class="page-header__logo">
+        <span class="visually-hidden">На главную</span><br>
         <img src="" alt="Логотип онлайн-сервиса Погнали">
       </a>
 
-      <div class="page-footer__social  social">
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link
-            					page-footer__social-link--facebook"
-               href="#">Мы в Фейсбуке</a>
+      <nav class="main-nav  main-nav--closed">
+
+        <button class="main-nav__toggle
+                     main-nav__toggle--open" type="button">
+          Открыть меню
+        </button>
+
+        <ul class="main-nav__site-list">
+          <li class="main-nav__site-item
+                   page-header__site-item--active">
+            <a class="main-nav__site-link">О сервисе</a>
           </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link
-            					page-footer__social-link--vk"
-               href="#">Мы в Контакте</a>
+          <li class="main-nav__site-item">
+            <a class="main-nav__site-link" href="form.html">Направления</a>
           </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link
-            					page-footer__social-link--instagram"
-               href="#">Мы в Инстаграме</a>
+          <li class="main-nav__site-item">
+            <a class="main-nav__site-link" href="catolog.html">Попутчики</a>
           </li>
         </ul>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__user-item">
+            <a class="main-nav__user-login" href="login.html">Авторизация</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__contact-list">
+          <li class="main-nav__contact-item">
+            <a class="main-nav__contact-link" href="tel:88005558628">8(800)555-86-28</a>
+          </li>
+          <li class="main-nav__contact-item">
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__social-list">
+          <li class="main-nav__social-item">
+            <a class="main-nav__social-link
+                    main-nav__social-link--facebook" href="#">
+              Мы в Фейсбуке
+            </a>
+          </li>
+          <li class="main-nav__social-item">
+            <a class="main-nav__social-link
+                    main-nav__social-link--vk" href="#">
+              Мы в Контакте
+            </a>
+          </li>
+          <li class="main-nav__social-item">
+            <a class="main-nav__social-link
+                    main-nav__social-link--instagram" href="#">
+              Мы в Инстаграме
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main>
+
+      <h1 class="catalog__title">Попутчики</h1>
+
+      <div class="companions">
+
+        <form class="companions-form" method="get" action="https:\\echo.htmlacademy.ru">
+
+          <strong class="companions-form__title">Подберите идеального попутчика</strong>
+
+          <fieldset class="companions-form__fieldset">
+            <legend class="companions-form__legend">Хобби</legend>
+          </fieldset>
+
+          <fieldset class="companions-form__fieldset companions-form__fieldset--music">
+            <legend class="companions-form__legend">Музыка</legend>
+            <p>
+              <label class="companions-form__label">
+                <input type="checkbox" name="music" value="heavy-rock">
+                <span>Тяжелый рок</span>
+              </label>
+            </p>
+            <p>
+              <label class="companions-form__label">
+                <input type="checkbox" name="music" value="russian-rap">
+                <span>Русский рэп</span>
+              </label>
+            </p>
+            <p>
+              <label class="companions-form__label">
+                <input type="checkbox" name="music" value="eurodance">
+                <span>Евроденс</span>
+              </label>
+            </p>
+          </fieldset>
+
+          <fieldset class="companions-form__fieldset">
+            <legend class="companions-form__legend">Еда</legend>
+          </fieldset>
+
+          <fieldset class="companions-form__fieldset
+                         companions-form__fieldset--transport">
+            <legend class="companions-form__legend">Транспорт</legend>
+            <p>
+              <label class="companions-form__label">
+                <input type="checkbox" name="transport" value="plane">
+                <span>Самолет</span>
+              </label>
+            </p>
+            <p>
+              <label class="companions-form__label">
+                <input type="checkbox" name="transport" value="bus">
+                <span>Автобус</span>
+              </label>
+            </p>
+            <p>
+              <label class="companions-form__label">
+                <input type="checkbox" name="transport" value="bike">
+                <span>Велосипед</span>
+              </label>
+            </p>
+            <p>
+              <label class="companions-form__label">
+                <input type="checkbox" name="transport" value="onfoot">
+                <span>Пешком</span>
+              </label>
+            </p>
+          </fieldset>
+
+          <fieldset class="companions-form__fieldset
+                         companions-form__fieldset--level">
+            <legend class="companions-form__legend">Левел</legend>
+            <p>
+              <label class="companions-form__label">
+                <span>C</span>
+                <input type="number" value="30">
+              </label>
+            </p>
+            <p>
+              <label class="companions-form__label">
+                <span>По</span>
+                <input type="number" value="100">
+              </label>
+            </p>
+            <p>
+              <input type="range" min="0" max="100" name="level">
+            </p>
+          </fieldset>
+
+          <button class="companions-form__submit" type="submit">Показать</button>
+
+        </form>
+
       </div>
 
-      <div class="page-footer__copyright">
-        <b class="page-footer__copyright-text">Разработано</b>
-        <a class="page-footer__copyright-link"
-        	 href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="destination">
+
+        <form class="destination-form  destination-form--closed" method="get" action="https:\\echo.htmlacademy.ru">
+
+          <h2>Фильтрация по странам</h2>
+
+          <fieldset class="destination-form__fieldset  destination-form__fieldset--continents">
+            <legend>Континент</legend>
+            <p>
+              <label class="destination-form__label">
+                <span>Европа</span>
+                <input type="radio" name="destination-continent" checked>
+              </label>
+            </p>
+            <p>
+              <label class="destination-form__label">
+                <span>Азия</span>
+                <input type="radio" name="destination-continent">
+              </label>
+            </p>
+            <p>
+              <label class="destination-form__label">
+                <span>Америка</span>
+                <input type="radio" name="destination-continent">
+              </label>
+            </p>
+            <p>
+              <label class="destination-form__label">
+                <span>Острова</span>
+                <input type="radio" name="destination-continent">
+              </label>
+            </p>
+          </fieldset>
+
+          <fieldset class="destination-form__alphabet">
+            <legend>Алфавит</legend>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet" checked>
+                <span>А</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Б</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>В</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Г</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Д</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Е</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>З</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>И</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>К</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Л</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>М</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Н</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>О</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>П</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Р</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>С</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Т</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>У</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Ф</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Х</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Ч</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Ш</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Э</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Ю</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="destination-alphabet">
+                <span>Я</span>
+              </label>
+            </p>
+
+          </fieldset>
+
+          <fieldset class="destination-form__fieldset  destination-form__fieldset--countries">
+            <legend>Страны</legend>
+            <p>
+              <label class="destination-form__label">
+                <span>Афганистан</span>
+                <input type="radio" name="destination-country">
+              </label>
+            </p>
+            <p>
+              <label class="destination-form__label">
+                <span>Албания</span>
+                <input type="radio" name="destination-country">
+              </label>
+            </p>
+            <p>
+              <label class="destination-form__label">
+                <span>Алжир</span>
+                <input type="radio" name="destination-country">
+              </label>
+            </p>
+            <p>
+              <label class="destination-form__label">
+                <span>Андорра</span>
+                <input type="radio" name="destination-country">
+              </label>
+            </p>
+            <p>
+              <label>
+                <span>Аргентина</span>
+                <input type="radio" name="destination-country">
+              </label>
+            </p>
+            <p>
+              <label class="destination-form__label">
+                <span>Армения</span>
+                <input type="radio" name="destination-country">
+              </label>
+            </p>
+            <p>
+              <label class="destination-form__label">
+                <span>Австралия</span>
+                <input type="radio" name="destination-country">
+              </label>
+            </p>
+            <p>
+              <label class="destination-form__label">
+                <span>Австрия</span>
+                <input type="radio" name="destination-country">
+              </label>
+            </p>
+            <p>
+              <label class="destination-form__label">
+                <span>Азербайджан</span>
+                <input type="radio" name="destination-country">
+              </label>
+            </p>
+
+          </fieldset>
+
+          <button type="submit">Показать</button>
+
+          <button type="button">Cвернуть</button>
+
+        </form>
+
       </div>
 
-    </div>
+      <section class="catalog">
 
-  </footer>
+        <h2 class="visually-hidden">Список попутчиков</h2>
 
-</body>
+        <div class="catalog__wrapper">
+
+          <ul class="catalog-list">
+
+            <li class="catalog-list__item">
+              <article class="companion-card">
+
+                <div class="companion-card__main-info">
+                  <h3 class="companion-card__name">Таня Фирсова</h3>
+
+                  <p class="companion-card__status">Статус: не сети</p>
+
+                  <div class="companion-card__photo">
+                    <img class="companion-card__img" alt="Фото Тани Фирсовой">
+                  </div>
+
+                  <p class="companion-card__likes">
+                    <button class="companion-card__likes-button">Понравилось</button>
+                    <span class="companion-card__likes-amount">1,5 M</span>
+                  </p>
+
+                  <p class="companion-card__level">
+                    <span class="companion-card__level-value">99</span>
+                    <span class="companion-card__level-text">level</span>
+                  </p>
+                </div>
+
+                <section class="companion-card__preferences">
+                  <h4 class="companion-card__preferences-title">Интересы</h4>
+                  <ul class="companion-card__preferences-list">
+                    <li class="companion-card__preferences-item">#ЗОЖ</li>
+                    <li class="companion-card__preferences-item">#ПП</li>
+                    <li class="companion-card__preferences-item">#Фитнес</li>
+                    <li class="companion-card__preferences-item">#Пляж</li>
+                    <li class="companion-card__preferences-item">#Авокадо</li>
+                    <li class="companion-card__preferences-item">#Смузи</li>
+                  </ul>
+                </section>
+
+                <section class="companion-card__country">
+                  <h4 class="companion-card__country-title">Страны хочет посетить</h4>
+                  <ul class="companion-card__country-list">
+                    <li class="countries-list__country-item
+                               countries-list__country-item--srilanka">
+                      Шри-Ланка
+                    </li>
+                    <li class="countries-list__country-item
+                               countries-list__country-item--thailand">
+                      Тайланд
+                    </li>
+                    <li class="countries-list__country-item
+                               countries-list__country-item--seychelles">
+                      Сейшельские острова
+                    </li>
+                  </ul>
+                </section>
+
+                <section class="companion-card__vehicles">
+                  <h4 class="companion-card__vehicles-title">Транспорт</h4>
+                  <ul class="companion-card__vehicles-list">
+                    <li class="companion-card__vehicles-item
+                               companion-card__vehicles-item--active
+                               companion-card__vehicles-item--airplane">
+                      Самолет: используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                               companion-card__vehicles-item--train">
+                      Поезд: не используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                               companion-card__vehicles-item--bicycles">
+                      Велосипед: не используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                               companion-card__vehicles-item--byfoot">
+                      Пешком: не используется
+                    </li>
+                  </ul>
+                </section>
+
+                <a class="button  companion__call" href="#">Позвать</a>
+
+              </article>
+            </li>
+
+            <li class="companions-list__item">
+
+              <article class="companion-card">
+
+                <h3 class="companion-card__name">Петя Демин</h3>
+
+                <p class="companion-card__status  companion-card__status--online">Статус: в сети</p>
+
+                <div class="companion-card__photo">
+                  <img class="companion-card__img" alt="Фото Пети Демина">
+                </div>
+
+                <p class="companion-card__level">
+                  <span class="companion-card__level-value">80</span>
+                  <span class="companion-card__level-text">level</span>
+                </p>
+
+                <section class="companion-card__preferences">
+                  <h4 class="companion-card__preferences-title">Интересы</h4>
+                  <ul class="companion-card__preferences-list">
+                    <li class="companion-card__preferences-item">#бургер</li>
+                    <li class="companion-card__preferences-item">#бар</li>
+                    <li class="companion-card__preferences-item">#футбол</li>
+                    <li class="companion-card__preferences-item">#концерт</li>
+                    <li class="companion-card__preferences-item">#крафт</li>
+                  </ul>
+                </section>
+
+                <section class="companion-card__country">
+                  <h4 class="companion-card__country-title">Страны</h4>
+                  <ul class="companion-card__country-list">
+                    <li class="countries-list__country-item
+                   countries-list__country-item--belgium">
+                      Бельгия
+                    </li>
+                    <li class="countries-list__country-item
+                   countries-list__country-item--czech">
+                      Чехия
+                    </li>
+                  </ul>
+                </section>
+
+                <section class="companion-card__vehicles">
+                  <h4 class="companion-card__vehicles-title">Транспортные средства</h4>
+                  <ul class="companion-card__vehicles-list">
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--active
+                   companion-card__vehicles-item--airplane">
+                      Самолет: используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--active
+                   companion-card__vehicles-item--train">
+                      Поезд: используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--bicycles">
+                      Велосипед: не используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--active
+                   companion-card__vehicles-item--byfoot">
+                      Пешком: используется
+                    </li>
+                  </ul>
+                </section>
+
+              </article>
+
+              <a class="button  companion__call" href="#">Позвать</a>
+
+            </li>
+
+            <li class="companions-list__item">
+
+              <article class="companion-card">
+
+                <h3 class="companion-card__name">Марк Смолов</h3>
+
+                <p class="companion-card__status">Статус: не сети</p>
+
+                <div class="companion-card__photo">
+                  <img class="companion-card__img" alt="Фото Марка Смолова">
+                </div>
+
+                <p class="companion-card__level">
+                  <span class="companion-card__level-value">25</span>
+                  <span class="companion-card__level-text">level</span>
+                </p>
+
+                <section class="companion-card__preferences">
+                  <h4 class="companion-card__preferences-title">Интересы</h4>
+                  <ul class="companion-card__preferences-list">
+                    <li class="companion-card__preferences-item">#рэп</li>
+                    <li class="companion-card__preferences-item">#тату</li>
+                    <li class="companion-card__preferences-item">#хайлбист</li>
+                    <li class="companion-card__preferences-item">#кроссовки</li>
+                    <li class="companion-card__preferences-item">#суприм</li>
+                  </ul>
+                </section>
+
+                <section class="companion-card__country">
+                  <h4 class="companion-card__country-title">Страны</h4>
+                  <ul class="companion-card__country-list">
+                    <li class="countries-list__country-item
+                   countries-list__country-item--usa">
+                      США
+                    </li>
+                    <li class="countries-list__country-item
+                   countries-list__country-item--australia">
+                      Австралия
+                    </li>
+                    <li class="countries-list__country-item
+                   countries-list__country-item--dominican">
+                      Доминикана
+                    </li>
+                  </ul>
+                </section>
+
+                <section class="companion-card__vehicles">
+                  <h4 class="companion-card__vehicles-title">Транспортные средства</h4>
+                  <ul class="companion-card__vehicles-list">
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--active
+                   companion-card__vehicles-item--airplane">
+                      Самолет: используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--train">
+                      Поезд: не используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--active
+                   companion-card__vehicles-item--bicycles">
+                      Велосипед: используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--byfoot">
+                      Пешком: не используется
+                    </li>
+                  </ul>
+                </section>
+
+              </article>
+
+              <a class="button  companion__call" href="#">Позвать</a>
+
+            </li>
+
+            <li class="companions-list__item">
+
+              <article class="companion-card">
+
+                <h3 class="companion-card__name">Лариса Роговая</h3>
+
+                <p class="companion-card__status  companion-card__status--online">Статус: сети</p>
+
+                <div class="companion-card__photo">
+                  <img class="companion-card__img" alt="Фото Пети Демина">
+                </div>
+
+                <p class="companion-card__level">
+                  <span class="companion-card__level-value">50</span>
+                  <span class="companion-card__level-text">level</span>
+                </p>
+
+                <section class="companion-card__preferences">
+                  <h4 class="companion-card__preferences-title">Интересы</h4>
+                  <ul class="companion-card__preferences-list">
+                    <li class="companion-card__preferences-item">#образование</li>
+                    <li class="companion-card__preferences-item">#карьера</li>
+                    <li class="companion-card__preferences-item">#учеба</li>
+                    <li class="companion-card__preferences-item">#линкедин</li>
+                  </ul>
+                </section>
+
+                <section class="companion-card__country">
+                  <h4 class="companion-card__country-title">Страны</h4>
+                  <ul class="companion-card__country-list">
+                    <li class="countries-list__country-item
+                   countries-list__country-item--britain">
+                      Великобритание
+                    </li>
+                    <li class="countries-list__country-item
+                   countries-list__country-item--germany">
+                      Германия
+                    </li>
+                  </ul>
+                </section>
+
+                <section class="companion-card__vehicles">
+                  <h4 class="companion-card__vehicles-title">Транспортные средства</h4>
+                  <ul class="companion-card__vehicles-list">
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--active
+                   companion-card__vehicles-item--airplane">
+                      Самолет: используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--active
+                   companion-card__vehicles-item--train">
+                      Поезд: используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--bicycles">
+                      Велосипед: не используется
+                    </li>
+                    <li class="companion-card__vehicles-item
+                   companion-card__vehicles-item--byfoot">
+                      Пешком: не используется
+                    </li>
+                  </ul>
+                </section>
+
+              </article>
+
+              <a class="button  companion__call" href="#">Позвать</a>
+
+            </li>
+
+          </ul>
+
+          <button class="button companions__button" type="button">Показать еще</button>
+
+          <nav class="pagination">
+
+            <ul class="pagination-list">
+              <li class="pagination-item page-next"><a href="#">назад</a></li>
+              <li class="pagination-item page-back"><a href="#">вперед</a></li>
+            </ul>
+
+          </nav>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <footer class="page-footer">
+
+      <div class="page-footer__wrapper">
+
+        <a class="page-footer__logo">
+          <img src="" alt="Логотип онлайн-сервиса Погнали">
+        </a>
+
+        <div class="page-footer__social  social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link
+            					page-footer__social-link--facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link
+            					page-footer__social-link--vk" href="#">Мы в Контакте</a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link
+            					page-footer__social-link--instagram" href="#">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright">
+          <b class="page-footer__copyright-text">Разработано</b>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </body>
+
 </html>

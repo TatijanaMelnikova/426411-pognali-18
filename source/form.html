@@ -1,335 +1,339 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>Погнали</title>
-</head>
-<body>
+    <title>Направления | Онлайн-сервис Погнали</title>
+  </head>
 
-  <header class="page-header">
+  <body>
 
-    <a class="page-header__logo">
-      <img src="">
-    </a>
+    <header class="page-header">
 
-    <nav class="main-nav">
-
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-
-      <ul class="main-nav__site-list">
-        <li class="main-nav__site-item page-header__site-item--active">
-          <a href="index.html">О сервисе</a>
-        </li>
-        <li class="main-nav__site-item">
-          <a>Направления</a>
-        </li>
-        <li class="main-nav__site-item">
-          <a href="catolog.html">Попутчики</a>
-        </li>
-      </ul>
-
-      <ul class="main-nav__user-list">
-        <li class="main-nav__user-item">
-          <a class="main-nav__user-login" href="login.html">Авторизация</a>
-        </li>
-      </ul>
-
-      <ul class="main-nav__contact-list">
-        <li class="main-nav__contact-item">
-          <a class="main-nav__contact-link" href="tel:88005558628">8(800)555-86-28</a>
-        </li>
-        <li class="main-nav__contact-item">
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </li>
-      </ul>
-
-      <ul class="main-nav__social-list">
-        <li class="main-nav__social-item">
-          <a class="main-nav__social-link  main-nav__social-link--facebook" href="#">Мы в Фейсбуке</a>
-        </li>
-        <li class="main-nav__social-item">
-          <a class="main-nav__social-link  main-nav__social-link--vk" href="#">Мы в Контакте</a>
-        </li>
-        <li class="main-nav__social-item">
-          <a class="main-nav__social-link  main-nav__social-link--instagram" href="#">Мы в Инстаграме</a>
-        </li>
-      </ul>
-
-    </nav>
-
-  </header>
-
-  <main>
-
-    <h1 class="visually-hidden">Форма поиска попутчиков</h1>
-
-    <article class="companion-card">
-
-      <h3 class="companion-card__name">Петя Демин</h3>
-
-      <p class="companion-card__status  companion-card__status--online">Статус: в сети</p>
-
-      <div class="companion-card__photo">
-        <img class="companion-card__img" alt="Фото Пети Демина">
-      </div>
-
-      <p class="companion-card__level">
-        <span class="companion-card__level-value">80</span>
-        <span class="companion-card__level-text">level</span>
-      </p>
-
-      <section class="companion-card__preferences">
-        <h4 class="companion-card__preferences-title">Интересы</h4>
-        <ul class="companion-card__preferences-list">
-          <li class="companion-card__preferences-item">#бургер</li>
-          <li class="companion-card__preferences-item">#бар</li>
-          <li class="companion-card__preferences-item">#футбол</li>
-          <li class="companion-card__preferences-item">#концерт</li>
-          <li class="companion-card__preferences-item">#крафт</li>
-        </ul>
-      </section>
-
-      <section class="companion-card__country">
-        <h4 class="companion-card__country-title">Страны</h4>
-        <ul class="companion-card__country-list">
-          <li class="countries-list__country-item
-             countries-list__country-item--belgium">
-            Бельгия
-          </li>
-          <li class="countries-list__country-item
-             countries-list__country-item--czech">
-            Чехия
-          </li>
-        </ul>
-      </section>
-
-
-      <section class="companion-card__vehicles">
-        <h4 class="companion-card__vehicles-title">Транспортные средства</h4>
-        <ul class="companion-card__vehicles-list">
-          <li class="companion-card__vehicles-item
-             companion-card__vehicles-item--active
-             companion-card__vehicles-item--airplane">
-            Самолет: используется
-          </li>
-          <li class="companion-card__vehicles-item
-             companion-card__vehicles-item--active
-             companion-card__vehicles-item--train">
-            Поезд: используется
-          </li>
-          <li class="companion-card__vehicles-item
-             companion-card__vehicles-item--bicycles">
-            Велосипед: не используется
-          </li>
-          <li class="companion-card__vehicles-item
-             companion-card__vehicles-item--active
-             companion-card__vehicles-item--byfoot">
-            Пешком: используется
-          </li>
-        </ul>
-      </section>
-
-    </article>
-
-    <section class="plans">
-
-      <h2 class="plans-title">Мои планы:</h2>
-
-      <ol class="plans-list">
-        <li class="plans-list__item">
-          <h3 class="plans-list__title">Франция, Италия</h3>
-          <p class="plans-list__text"><span class="plans-list__companions-count">3</span> попутчика</p>
-          <p class="plans-list__text">26 мар — 29 мар</p>
-          <button class="plans-list__button" type="button">Изменить</button>
-        </li>
-        <li class="plans-list__item">
-          <h3 class="plans-list__title">Таиланд, Индонезия</h3>
-          <p class="plans-list__text"><span class="plans-list__companions-count">1</span>  попутчик</p>
-          <p class="plans-list__text">1 июл — 15 июл</p>
-          <button class="plans-list__button" type="button">Изменить</button>
-        </li>
-      </ol>
-
-    </section>
-
-    <section class="plan">
-
-      <h2 class="plan__title">Добавить план:</h2>
-
-      <form class="plan-form">
-
-      <fieldset class="plan-form__fieldset">
-
-        <legend class="plan-form__title">Шаг 1. Даты пребывания</legend>
-        <p class="plan-form__intro">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-
-        <p class="plan-form__amount">
-          <strong class="plan-form__amount-title">
-            Ищу попутчиков:
-            <span>Чел.</span>
-          </strong>
-          <br>
-          <button class="plan-form__amount-button" type="button">Убавить</button>
-          <input type="number" min="0" max="10" step="1" value="2">
-          <button class="plan-form__amount-button" type="button">Добавить</button>
-        </p>
-
-        <p class="plan-form__amount">
-          <strong class="plan-form__title">
-            Длительность:
-            <span>Дн.</span>
-          </strong>
-          <br>
-          <button class="plan-form__amount-button" type="button">Убавить</button>
-          <input type="number" min="0" max="10" step="1" value="2">
-          <button class="plan-form__amount-button" type="button">Добавить</button>
-        </p>
-
-        <p class="plan-form__checkbox">
-          <label>
-            <input type="checkbox" checked>
-            <span>Можно с детьми</span>
-          </label>
-        </p>
-
-        <p>
-          <i>Календарь</i>
-        </p>
-
-        <p class="plan-form__step  plan-form__step--next">
-          <button type="button">Следующий шаг</button>
-        </p>
-
-      </fieldset>
-
-      <fieldset class="plan-form__fieldset">
-
-        <legend class="plan-form__title">Шаг 2. Маршрут</legend>
-        <p class="plan-form__intro">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
-
-        <p class="plan-form__select">
-          <select>
-            <option>Выберете страну</option>
-            <option value="Чехия">Чехия</option>
-            <option value="Босния и Герцеговина" selected>Босния и Герцеговина</option>
-            <option value="Черногорье">Черногорье</option>
-            <option value="Латвия">Латвия</option>
-          </select>
-          <button class="plan-form__select-button" type="button">Удалить страну</button>
-        </p>
-
-        <p class="plan-form__select">
-          <select>
-            <option>Выберете страну</option>
-            <option value="Чехия" selected>Чехия</option>
-            <option value="Босния и Герцеговина">Босния и Герцеговина</option>
-            <option value="Черногорье">Черногорье</option>
-            <option value="Латвия">Латвия</option>
-          </select>
-          <button class="plan-form__select-button" type="button">Удалить страну</button>
-        </p>
-
-        <p class="plan-form__select">
-          <select>
-            <option selected>Выберете страну</option>
-            <option value="Чехия">Чехия</option>
-            <option value="Босния и Герцеговина">Босния и Герцеговина</option>
-            <option value="Черногорье">Черногорье</option>
-            <option value="Латвия">Латвия</option>
-          </select>
-          <button class="plan-form__select-button" type="button">Удалить страну</button>
-        </p>
-
-        <p class="plan-form__add-country">
-          <button type="button">Добавить страну</button>
-        </p>
-
-        <p class="plan-form__step  plan-form__step--next">
-          <button type="button">Следующий шаг</button>
-        </p>
-
-        <p class="plan-form__step  plan-form__step--prev">
-          <button type="button">На шаг назад</button>
-        </p>
-
-      </fieldset>
-
-      <fieldset class="plan-form__fieldset">
-
-        <legend class="plan-form__title">Шаг 3. Развлечения</legend>
-        <p class="plan-form__intro">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-
-        <p class="plan-form__plan">
-          <label>
-            <span>Босния и Герцеговина:</span>
-            <br>
-            <textarea rows="10" cols="30">План действий</textarea>
-          </label>
-        </p>
-
-        <p class="plan-form__plan">
-          <label>
-            <span>Чехия:</span>
-            <br>
-            <textarea rows="10" cols="30">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
-          </label>
-        </p>
-
-        <p class="plan-form__submit">
-          <button type="submit">Отправить форму</button>
-        </p>
-
-        <p class="plan-form__step  plan-form__step--prev">
-          <button type="button">На шаг назад</button>
-        </p>
-
-      </fieldset>
-
-      </form>
-
-    </section>
-
-  </main>
-
-
-  <footer class="page-footer">
-
-    <div class="page-footer__wrapper">
-
-      <a class="page-footer__logo">
+      <a class="page-header__logo">
+        <span class="visually-hidden">На главную</span><br>
         <img src="" alt="Логотип онлайн-сервиса Погнали">
       </a>
 
-      <div class="page-footer__social  social">
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link
-            					page-footer__social-link--facebook"
-               href="#">Мы в Фейсбуке</a>
+      <nav class="main-nav  main-nav--closed">
+
+        <button class="main-nav__toggle
+                     main-nav__toggle--open" type="button">
+          Открыть меню
+        </button>
+
+        <ul class="main-nav__site-list">
+          <li class="main-nav__site-item">
+            <a class="main-nav__site-link" href="index.html">О сервисе</a>
           </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link
-            					page-footer__social-link--vk"
-               href="#">Мы в Контакте</a>
+          <li class="main-nav__site-item">
+            <a class="main-nav__site-link
+                    page-header__site-item--active">
+              Направления
+            </a>
           </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link
-            					page-footer__social-link--instagram"
-               href="#">Мы в Инстаграме</a>
+          <li class="main-nav__site-item">
+            <a class="main-nav__site-link" href="catolog.html">Попутчики</a>
           </li>
         </ul>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__user-item">
+            <a class="main-nav__user-login" href="login.html">Авторизация</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__contact-list">
+          <li class="main-nav__contact-item">
+            <a class="main-nav__contact-link" href="tel:88005558628">8(800)555-86-28</a>
+          </li>
+          <li class="main-nav__contact-item">
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__social-list">
+          <li class="main-nav__social-item">
+            <a class="main-nav__social-link
+                    main-nav__social-link--facebook" href="#">
+              Мы в Фейсбуке
+            </a>
+          </li>
+          <li class="main-nav__social-item">
+            <a class="main-nav__social-link
+                    main-nav__social-link--vk" href="#">
+              Мы в Контакте
+            </a>
+          </li>
+          <li class="main-nav__social-item">
+            <a class="main-nav__social-link
+                    main-nav__social-link--instagram" href="#">
+              Мы в Инстаграме
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main>
+
+      <h1 class="page-title">Направления</h1>
+
+      <section class="user">
+
+        <h3 class="user__name">Петя Демин</h3>
+
+        <p class="user__level">
+          <span class="user__level-value">80</span>
+          <span class="user__level-text">level</span>
+        </p>
+
+        <div class="user__photo">
+
+          <img class="user__img" alt="Фото Пети Демина">
+          <form class="user-form" method="post" action="echo.htmlacademy.ru">
+            <label>
+              <span>Сменить фото</span>
+              <input type="file">
+            </label>
+          </form>
+
+        </div>
+
+        <section class="user__preferences">
+          <h4 class="user__preferences-title">Тэги</h4>
+          <ul class="user__preferences-list">
+            <li class="user__preferences-item">#бургер</li>
+            <li class="user__preferences-item">#бар</li>
+            <li class="user__preferences-item">#футбол</li>
+            <li class="user__preferences-item">#концерт</li>
+            <li class="user__preferences-item">#крафт</li>
+          </ul>
+        </section>
+
+        <section class="user__vehicles">
+          <h4 class="user__vehicles-title">Транспорт</h4>
+          <ul class="user__vehicles-list">
+            <li class="user__vehicles-item
+             user__vehicles-item--active
+             user__vehicles-item--airplane">
+              Самолет: используется
+            </li>
+            <li class="user__vehicles-item
+             user__vehicles-item--active
+             user__vehicles-item--train">
+              Поезд: используется
+            </li>
+            <li class="user__vehicles-item
+             user__vehicles-item--bicycles">
+              Велосипед: не используется
+            </li>
+            <li class="user__vehicles-item
+             user__vehicles-item--active
+             user__vehicles-item--byfoot">
+              Пешком: используется
+            </li>
+          </ul>
+        </section>
+
+      </section>
+
+      <section class="plans">
+
+        <h2 class="plans-title">Мои планы:</h2>
+
+        <ol class="plans-list">
+          <li class="plans-list__item">
+            <h3 class="plans-list__title">Франция, Италия</h3>
+            <p class="plans-list__text"><span class="plans-list__companions-count">3</span> попутчика</p>
+            <p class="plans-list__text">26 мар — 29 мар</p>
+            <button class="plans-list__button" type="button">Изменить</button>
+          </li>
+          <li class="plans-list__item">
+            <h3 class="plans-list__title">Таиланд, Индонезия</h3>
+            <p class="plans-list__text"><span class="plans-list__companions-count">1</span> попутчик</p>
+            <p class="plans-list__text">1 июл — 15 июл</p>
+            <button class="plans-list__button" type="button">Изменить</button>
+          </li>
+        </ol>
+
+      </section>
+
+      <section class="plan">
+
+        <h2 class="plan__title">Добавить план:</h2>
+
+        <form class="plan-form">
+
+          <fieldset class="plan-form__fieldset">
+
+            <legend class="plan-form__title">Шаг 1. Даты пребывания</legend>
+            <p class="plan-form__intro">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+
+            <p class="plan-form__amount">
+              <strong class="plan-form__amount-title">
+                Ищу попутчиков:
+                <span>Чел.</span>
+              </strong>
+              <br>
+              <button class="plan-form__amount-button" type="button">Убавить</button>
+              <input type="number" min="0" max="10" step="1" value="2">
+              <button class="plan-form__amount-button" type="button">Добавить</button>
+            </p>
+
+            <p class="plan-form__amount">
+              <strong class="plan-form__title">
+                Длительность:
+                <span>Дн.</span>
+              </strong>
+              <br>
+              <button class="plan-form__amount-button" type="button">Убавить</button>
+              <input type="number" min="0" max="10" step="1" value="2">
+              <button class="plan-form__amount-button" type="button">Добавить</button>
+            </p>
+
+            <p class="plan-form__checkbox">
+              <label>
+                <input type="checkbox" checked>
+                <span>Можно с детьми</span>
+              </label>
+            </p>
+
+            <p>
+              <i>Календарь</i>
+            </p>
+
+            <p class="plan-form__step  plan-form__step--next">
+              <button type="button">Следующий шаг</button>
+            </p>
+
+          </fieldset>
+
+          <fieldset class="plan-form__fieldset">
+
+            <legend class="plan-form__title">Шаг 2. Маршрут</legend>
+            <p class="plan-form__intro">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+
+            <p class="plan-form__select">
+              <select>
+                <option>Выберете страну</option>
+                <option value="Чехия">Чехия</option>
+                <option value="Босния и Герцеговина" selected>Босния и Герцеговина</option>
+                <option value="Черногорье">Черногорье</option>
+                <option value="Латвия">Латвия</option>
+              </select>
+              <button class="plan-form__select-button" type="button">Удалить страну</button>
+            </p>
+
+            <p class="plan-form__select">
+              <select>
+                <option>Выберете страну</option>
+                <option value="Чехия" selected>Чехия</option>
+                <option value="Босния и Герцеговина">Босния и Герцеговина</option>
+                <option value="Черногорье">Черногорье</option>
+                <option value="Латвия">Латвия</option>
+              </select>
+              <button class="plan-form__select-button" type="button">Удалить страну</button>
+            </p>
+
+            <p class="plan-form__select">
+              <select>
+                <option selected>Выберете страну</option>
+                <option value="Чехия">Чехия</option>
+                <option value="Босния и Герцеговина">Босния и Герцеговина</option>
+                <option value="Черногорье">Черногорье</option>
+                <option value="Латвия">Латвия</option>
+              </select>
+              <button class="plan-form__select-button" type="button">Удалить страну</button>
+            </p>
+
+            <p class="plan-form__add-country">
+              <button type="button">Добавить страну</button>
+            </p>
+
+            <p class="plan-form__step  plan-form__step--next">
+              <button type="button">Следующий шаг</button>
+            </p>
+
+            <p class="plan-form__step  plan-form__step--prev">
+              <button type="button">На шаг назад</button>
+            </p>
+
+          </fieldset>
+
+          <fieldset class="plan-form__fieldset">
+
+            <legend class="plan-form__title">Шаг 3. Развлечения</legend>
+            <p class="plan-form__intro">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+
+            <p class="plan-form__plan">
+              <label>
+                <span>Босния и Герцеговина:</span>
+                <br>
+                <textarea rows="10" cols="30">План действий</textarea>
+              </label>
+            </p>
+
+            <p class="plan-form__plan">
+              <label>
+                <span>Чехия:</span>
+                <br>
+                <textarea rows="10" cols="30">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              </label>
+            </p>
+
+            <p class="plan-form__submit">
+              <button type="submit">Отправить форму</button>
+            </p>
+
+            <p class="plan-form__step  plan-form__step--prev">
+              <button type="button">На шаг назад</button>
+            </p>
+
+          </fieldset>
+
+        </form>
+
+      </section>
+
+    </main>
+
+
+    <footer class="page-footer">
+
+      <div class="page-footer__wrapper">
+
+        <a class="page-footer__logo">
+          <img src="" alt="Логотип онлайн-сервиса Погнали">
+        </a>
+
+        <div class="page-footer__social  social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link
+            					page-footer__social-link--facebook" href="#">Мы в Фейсбуке</a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link
+            					page-footer__social-link--vk" href="#">Мы в Контакте</a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link
+            					page-footer__social-link--instagram" href="#">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright">
+          <b class="page-footer__copyright-text">Разработано</b>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+
       </div>
 
-      <div class="page-footer__copyright">
-        <b class="page-footer__copyright-text">Разработано</b>
-        <a class="page-footer__copyright-link"
-        	 href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-
-    </div>
-
-  </footer>
+    </footer>
 
   </body>
+
 </html>
